@@ -1,0 +1,133 @@
+.footer-container {
+  color: white;
+  font-size: 1rem;
+  height: 22vh;
+  width: 100%;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  /* border: 1px solid rgba(255, 255, 255, 1); */
+}
+
+footer {
+  height: 70%;
+  margin-bottom: 1rem;
+}
+
+.footer-container li {
+  list-style: none;
+}
+
+
+/* FOOTER CONTENT LAYOUT     */
+
+
+.footer-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+}
+
+.footer-left {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-left h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.platform-icons ul {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.platform-links ul {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.platform-icons ul li {
+  border: 2px solid rgba(255, 255, 255, 0.308);
+  padding: .4rem .7rem;
+  color: rgba(255, 255, 255, 0.664);
+  border-radius: 2px;
+    font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.platform-icons ul li:hover {
+  color: #00ff15a9;
+  scale: 1.1;
+  border-color: #00ff22af;
+}
+
+.platform-links ul li {
+  color: rgba(255, 255, 255, 0.651);
+  transition: all 0.2s ease;
+}
+.platform-links ul li:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff4b, 0 0 10px #ffffff59;
+}
+
+
+/* FOOTER RIGHT SIDE STYLES  */
+
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 10px;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center
+}
+.footer-logo h2 {
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    padding-right: 10px;
+    font-size: 1.8rem;
+}
+
+.footer-social-icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.footer-social-icons ul li {
+  color: rgba(255, 255, 255, 0.541);
+  transition: all 0.3s ease;
+}
+.footer-social-icons ul li:hover {
+  color: #ffffff;
+    scale: 1.1;
+    text-shadow: 0 0 5px #ffffff4b, 0 0 10px #ffffff59;
+}
+
+.footer-copyright, .footer-powered-by {
+  color: rgba(255, 255, 255, 0.541);
+  font-size: 1rem;
+  text-align: center;
+}
+.footer-copyright span:hover {
+  cursor: pointer;
+  color: #fbfffb;
+  scale: 1.1;
+  transition: all 0.3s ease ;
+}

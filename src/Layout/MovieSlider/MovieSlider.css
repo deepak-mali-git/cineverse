@@ -1,0 +1,223 @@
+ .movie-slider-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.movie-slider {
+  margin: 2rem 0;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  background: transparent; 
+}
+.movie-slider-row::-webkit-scrollbar {
+    display: none; 
+}
+.movie-card:hover {
+  transform: scale(1.05);
+  z-index: 20;
+}
+
+.movie-card {
+  position: relative;
+  flex: 0 0 19%;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.movie-card:hover img {
+  transform: scale(1.05);
+}
+
+.movie-slider .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  padding-left: 12px;
+  position: relative;
+  z-index: 2; 
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hover-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 66%;
+  padding: 16px 12px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  transition: transform .3s ease;
+}
+
+.movie-card:hover .hover-card {
+  transform: translateY(0);
+}
+
+
+
+.hover-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.hover-icons {
+  display: flex;
+  gap: .7em;
+}
+
+.icon-circle {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.507);
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hover-info .meta {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hover-info .desc {
+  color: white;
+}
+
+
+
+.play-review {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.review-btn {
+  background-color: #4f8cff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-wrapper {
+  position: relative; /* Essential for positioning absolute child buttons */
+  overflow: hidden; /* Hide overflowing content initially */
+}
+
+.movie-slider-row {
+  display: flex;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS devices */
+  padding-bottom: 20px; /* Add some padding if scrollbar is visible */
+}
+
+/* Hide scrollbar for a cleaner look (optional) */
+.movie-slider-row::-webkit-scrollbar {
+  display: none;
+}
+.movie-slider-row {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.slide-button {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect centering */
+  background-color: rgba(0, 0, 0, 0.699); /* Semi-transparent background */
+  color: white;
+  border: none;
+  
+  padding: 15px 10px;
+  cursor: pointer;
+  z-index: 10; /* Ensure buttons are above movie cards */
+  font-size: 2em;
+  border-radius: 15px; /* Slightly rounded corners */
+  backdrop-filter: blur(5px); /* Optional: add a blur effect for aesthetics */
+  /* opacity: 0; Hidden by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+.slider-wrapper:hover .slide-button {
+  opacity: 1; /* Show buttons on hover over the slider wrapper */
+}
+
+.slide-button.prev {
+  left: 0;
+}
+
+.slide-button.next {
+  right: 0;
+  margin-right: 14px;
+
+}
+

@@ -1,0 +1,97 @@
+.background-media {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 118vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  
+}
+
+.background-media::after {
+  background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 17%, rgba(0, 0, 0, 0) 70%);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  left: 0;
+
+  /* border: 2px solid red; */
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .iframe-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120vw;
+    height: 120vh;
+
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+  }
+
+  .background-image {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

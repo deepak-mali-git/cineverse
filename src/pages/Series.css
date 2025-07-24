@@ -1,0 +1,17 @@
+.series-container {
+  color: white;
+  padding: 6rem 0rem 0rem;
+  min-height: 80vh;
+  background-color: #121212;
+}
+
+.series-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #82aaff;
+}
+
+.series-container p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
